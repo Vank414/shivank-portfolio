@@ -1,0 +1,135 @@
+/* ================= NAVBAR ================= */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 60px;
+
+  background: #005154;
+  box-sizing: border-box;
+  z-index: 1000;
+
+  transition: 0.3s ease;
+}
+
+/* Scroll Effect */
+.navbar.scrolled {
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Links Container */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* ================= LOGO ================= */
+
+.logo a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.navbar.scrolled .logo a {
+  color: black;
+}
+
+/* ================= NAV LINKS ================= */
+
+.nav-links a,
+.nav-links a:visited,
+.nav-links a:link,
+.nav-links a:active {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.navbar.scrolled .nav-links a {
+  color: black;
+}
+
+/* Animated underline */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #ffcc00;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Resume Button */
+.resume-btn-nav {
+  border: 1.5px solid #ffcc00;
+  padding: 6px 14px;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.resume-btn-nav:hover {
+  background: #ffcc00;
+  color: black;
+}
+
+/* ================= DARK MODE ================= */
+
+.dark .navbar {
+  background: #111;
+  border-bottom: 1px solid #333;
+}
+
+/* ================= TOGGLE BUTTON ================= */
+
+.theme-toggle {
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 10px;
+  background: none;
+  border: none;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.navbar.scrolled .theme-toggle {
+  color: black;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+}

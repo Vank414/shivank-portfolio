@@ -1,0 +1,97 @@
+/* ================= GLOBAL RESET ================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================= GLOBAL TYPOGRAPHY ================= */
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(-45deg, #ffffff, #f7f9fc, #eef2f7, #ffffff);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  color: #111;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sora', sans-serif;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+/* ================= GLOBAL SECTION SPACING ================= */
+
+section {
+  padding: 80px 20px;
+  width: 100%;
+}
+
+/* ================= GLOBAL TEXT SELECTION ================= */
+::selection {
+  background: #2d2678;     /* your accent color */
+  color: rgb(255, 242, 0);           /* text color when selected */
+}
+
+.dark ::selection {
+  background: #00e5ff;
+  color: #111;
+}
+
+::-moz-selection {
+  background: #00e5ff;   /* Firefox support */
+  color: #0f0f1a;
+}
+
+/* ================= DARK MODE BASE ================= */
+
+.dark {
+  background-color: #111;
+  color: white;
+}
+
+/* ================= ANIMATIONS ================= */
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ================= MOBILE GLOBAL ================= */
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 15px;
+  }
+}
