@@ -15,23 +15,26 @@ export default function About() {
         <div className="about-content">
 
           <h3 className="about-heading">
-            I'm a Computer Science undergraduate focused on software engineering, scalable systems, and machine learning. 
-            I enjoy building reliable software and solving complex problems through strong algorithmic thinking and 
-            clean system design.
+            I'm a Computer Science undergraduate with a strong interest in software engineering, 
+            scalable systems, and machine learning. I enjoy building reliable, high-performance 
+            software and tackling complex problems using solid algorithmic thinking and clean, maintainable system design.
           </h3>
 
           <p>
-            I've worked on projects involving <span className="highlight">backend systems, data modeling, and algorithmic problem solving</span>, with 
-            an emphasis on writing efficient, production-quality code and designing systems that scale.
+            My experience includes developing <span className="highlight">backend systems, working with data models, and 
+            solving algorithmic challenges</span>, with a consistent focus on writing efficient, production-quality code. 
+            I'm particularly interested in designing systems that scale and perform well under real-world constraints.
           </p>
 
           <p>
-            I'm particularly interested in software engineering roles at technology and quantitative firms, where I can 
-            work on challenging problems involving large-scale infrastructure, data systems, and performance-critical applications.          </p>
-
+            I'm actively seeking <span className="highlight">software engineering opportunities</span>—especially at technology and
+            <span className="highlight"> quantitative firms</span>—where I can contribute to solving challenging problems in large-scale 
+            infrastructure, data-intensive systems, and performance-critical applications.
+          </p>
+            
           <p>
-            Outside of development, I enjoy competitive programming, exploring new technologies, and continuously 
-            improving my problem-solving skills.
+            Outside of academics and development, I regularly practice competitive programming, 
+            explore emerging technologies, and continuously refine my problem-solving skills.
           </p>
 
           <p>

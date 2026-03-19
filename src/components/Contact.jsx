@@ -17,18 +17,19 @@ export default function Contact() {
         <div className="contact-cards">
 
           <div className="contact-card">
-            <FaEnvelope className="contact-icon" />
+            {/* <FaEnvelope className="contact-icon" /> */}
             <h3>Email</h3>
             <p>shivank.orbit@gmail.com</p>
+            <p>shivank.kumar24b@iiitg.ac.in</p>
           </div>
 
           <div className="contact-card">
             <h3>Socials</h3>
             <div className="social-icons">
-              <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">
+              <a href="https://github.com/Cipher14S" target="_blank" rel="noreferrer">
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/shivank-kumar-a498ba321/" target="_blank" rel="noreferrer">
                 <FaLinkedin />
               </a>
               <a href="https://instagram.com/yourusername" target="_blank" rel="noreferrer">
@@ -40,9 +41,9 @@ export default function Contact() {
           <div className="contact-card">
             <h3>Coding Profiles</h3>
             <div className="coding-links">
-              <a href="#" target="_blank" rel="noreferrer">Codeforces</a>
-              <a href="#" target="_blank" rel="noreferrer">AtCoder</a>
-              <a href="#" target="_blank" rel="noreferrer">LeetCode</a>
+              <a href="https://codeforces.com/profile/Coherent14S" target="_blank" rel="noreferrer">Codeforces</a>
+              <a href="https://atcoder.jp/users/Rare14S" target="_blank" rel="noreferrer">AtCoder</a>
+              <a href="https://leetcode.com/u/Arcane14S/" target="_blank" rel="noreferrer">LeetCode</a>
             </div>
           </div>
 
